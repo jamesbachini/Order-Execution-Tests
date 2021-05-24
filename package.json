@@ -32,5 +32,8 @@
     "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "ws": "^7.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0"
   }
 }

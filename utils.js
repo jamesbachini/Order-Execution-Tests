@@ -8,9 +8,11 @@ const utils = {
 		if (msg2) console.log(msg2);
 		if (msg3) console.log(msg3);
 		const yymmdd = new Date().toISOString().slice(2,10).replace(/-/g,'');
+		/*
 		fs.appendFile(`./data/${yymmdd}-log.txt`, msg+"\n", (err) => {
 			if (err) console.error(err)
 		});
+		*/
 	},
 
 	/* Calculate Price Point Between A Diagonal Time/Price Line */

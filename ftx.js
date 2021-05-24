@@ -7,7 +7,6 @@ let ftxWS = {};
 let ftxSocketTimeout = false;
 
 const ftx = {
-/* As above but with sub account and postOnly */
 	order: (side, market, qty, price, creds, reduce=false, postOnly=true) => {
 		return new Promise((resolve, reject) => {  
 			const ts = new Date().getTime();
