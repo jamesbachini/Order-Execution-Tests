@@ -59,7 +59,7 @@ const init = async () => {
 const calcResults = (results) => {
 	console.log(`### Order Execution Results ###`);
 	Object.keys(results).forEach(async (strategy) => {
-		const averageBatchTime = utils.round(results[strategy].executionTimes.reduce((a, b) => a + b, 0) / (results[strategy].executionTimes * 1000));
+		const averageBatchTime = utils.round(results[strategy].executionTimes.reduce((a, b) => a + b, 0) / (results[strategy].executionTimes.length * 1000));
 		const wallet = await ftx.wallet(credentials[strategy]);
 		let accountValue = 0;
 		wallet.forEach((a) => {
